@@ -11,6 +11,7 @@ import Admin from './pages/Admin'
 import Login from './pages/Login'
 import Account from './pages/Account'
 import { AuthProvider } from './context/AuthContext'
+import ProductDetail from './pages/ProductDetail'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
